@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Prompter{
 
 
-	public void promptForQuestions(){
+	public void promptForAdminstrator(){
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.println("ADMINISTRATOR SETUP\n====================");
@@ -15,5 +15,6 @@ public class Prompter{
 		int maxNumber = scanner.nextInt();
 
 		Jar jar = new Jar(itemName, maxNumber);
-	} 
+
+	}
 }

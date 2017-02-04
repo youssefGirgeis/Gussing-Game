@@ -8,4 +8,9 @@ public class Jar{
 		this.itemName = itemName;
 		this.maxNumberItems = maxNumberItems;
 	}
+
+	public void test(){
+		System.out.println(itemName);
+		System.out.println(maxNumberItems);
+	}
 }

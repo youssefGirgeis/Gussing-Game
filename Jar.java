@@ -1,3 +1,6 @@
+import java.util.Scanner;
+import java.util.Random;
+
 public class Jar{
 
 	private String itemName;
@@ -9,8 +12,23 @@ public class Jar{
 		this.maxNumberItems = maxNumberItems;
 	}
 
-	public void test(){
-		System.out.println(itemName);
-		System.out.println(maxNumberItems);
+	public int fill(){
+
+		Random random = new Random();
+		int randomNumber = random.nextInt(maxNumberItems + 1);
+		return randomNumber; 
+	}
+
+	public void guessNumber(){
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.printf("Your goal is to guess how many %s are in the jar. Your Guess shoud be between 1 and %d.%n",
+		itemName, maxNumberItems);
+
+		//System.out.println("Ready? (press ENTER to start gussing)");
+		//scanner.nextLine();
+		
+
 	}
 }

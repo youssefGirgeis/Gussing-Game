@@ -21,14 +21,25 @@ public class Jar{
 
 	public void guessNumber(){
 
+		int randomNumber = fill();
+		int counter = 0;
+
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.printf("Your goal is to guess how many %s are in the jar. Your Guess shoud be between 1 and %d.%n",
+		System.out.printf("Your goal is to guess how many %s are in the jar. Your Guess shoud be between 1 and %d.",
 		itemName, maxNumberItems);
 
-		//System.out.println("Ready? (press ENTER to start gussing)");
-		//scanner.nextLine();
 		
+		do{
+
+			System.out.print("Guess: ");
+			int guess = scanner.nextInt();
+			counter++;
+
+		}while(guess != randomNumber);
+
+		System.out.println("Congratulations - you guessed that there %d %s in the jar! It took you %d guess(es) to get right.",
+			randomNumber, itemName, counter);
 
 	}
 }

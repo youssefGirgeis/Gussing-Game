@@ -26,8 +26,8 @@ public class Jar{
 
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.printf("Your goal is to guess how many %s are in the jar. Your Guess shoud be between 1 and %d.",
-		itemName, maxNumberItems);
+		//System.out.printf("Your goal is to guess how many %s are in the jar. Your Guess shoud be between 1 and %d.",
+		//itemName, maxNumberItems);
 
 		
 		do{

@@ -4,7 +4,6 @@ public class Game {
     	Prompter prompter = new Prompter();
     	prompter.promptForAdminstrator();
 
-    	Jar.test();
 
     }
 }
